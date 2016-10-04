@@ -1,6 +1,6 @@
 # portsetter
 
-                    __Set__ __portsetter__ __Alias__
+__Set portsetter Alias__
                         
 To enable the portsetter program to be called with the command "setport" follow these steps:
 
@@ -13,7 +13,7 @@ To enable the portsetter program to be called with the command "setport" follow 
 
 
 
-                    __How__ __Testing__ __Program Works__
+__How Testing Program Works__
                     
 The testing progarm is run simply by running its executable i.e. ./Tester.cpp.o. 
 It will then run a series of tests automatically and will return whether or not the test
@@ -30,19 +30,19 @@ program. The program calls the portsetter executable directly, not by its alias.
 
 
 
-                    __Conjunto__ __portsetter__ __Alias__
+__Conjunto portsetter Alias__
                     
 Para activar el programa portsetter ser llamado con el comando "SETPORT" siga estos pasos:
 
-1. Edit el archivo .bashrc (~ / .bashrc)
+1. Edit el archivo .bashrc (~/.bashrc)
 2. Desplácese hasta la parte inferior del archivo.
 3. Añadir la línea: alias SETPORT = '{ruta completa a portsetter.cpp.o archivo}'
 4. Save y salga del archivo.
-5. Ingrese el comando "source ~ / .bashrc" para activar los cambios.
+5. Ingrese el comando "source ~/.bashrc" para activar los cambios.
 
 
 
-                __Cómo__ __Programa__ __de__ __Verificación__ __de__ __Obras__
+__Cómo Programa de Verificación de Obras__
 
 El progarm prueba se ejecuta simplemente mediante la ejecución de su ejecutable es decir ./Tester.cpp.o.
 A continuación, ejecutar una serie de pruebas automáticamente y volverá si la prueba o no
