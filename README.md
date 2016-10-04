@@ -1,6 +1,6 @@
 # portsetter
 
-                    __Set portsetter Alias__
+                    __Set__ __portsetter__ __Alias__
                         
 To enable the portsetter program to be called with the command "setport" follow these steps:
 
@@ -13,7 +13,7 @@ To enable the portsetter program to be called with the command "setport" follow 
 
 
 
-                    __How Testing Program Works__
+                    __How__ __Testing__ __Program Works__
                     
 The testing progarm is run simply by running its executable i.e. ./Tester.cpp.o. 
 It will then run a series of tests automatically and will return whether or not the test
@@ -30,7 +30,7 @@ program. The program calls the portsetter executable directly, not by its alias.
 
 
 
-                    __Conjunto portsetter Alias__
+                    __Conjunto__ __portsetter__ __Alias__
                     
 Para activar el programa portsetter ser llamado con el comando "SETPORT" siga estos pasos:
 
@@ -42,7 +42,7 @@ Para activar el programa portsetter ser llamado con el comando "SETPORT" siga es
 
 
 
-                __Cómo Programa de Verificación de Obras__
+                __Cómo__ __Programa__ __de__ __Verificación__ __de__ __Obras__
 
 El progarm prueba se ejecuta simplemente mediante la ejecución de su ejecutable es decir ./Tester.cpp.o.
 A continuación, ejecutar una serie de pruebas automáticamente y volverá si la prueba o no
