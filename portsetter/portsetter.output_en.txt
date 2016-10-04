@@ -1,0 +1,12 @@
+
+(Error 101) Too many parameters!
+(Error 102) Invalid port parameter!
+(Error 103) Invalid port number!
+(Error 104) Invalid second parameter!
+(Error 105) Non-integer port number!
+(Error 106) Invalid environment variable parameter!
+(Error 107) Invalid environment variable name!
+(Error 108) Non-integer environment variable value!
+(Error 109) Invalid environment variable number!
+Listening on port: 
+Version 1.2

@@ -1,0 +1,19 @@
+Usage: setport {parameter} {port number} OR setport {parameter} {parameter} {environment variable}
+
+-h, --help      Displays the usage information.
+-p, --port      Allows the user to set a port. Enter port number to be used.
+-v, --version	Displays the program version number.
+-!, --about	Displays information about program creator.
+-e		Allows the user to define a port number by looking up an environment variable.
+		If no environment variable name is used, PORT variable will be used by default.
+		
+-------------------Error Codes-------------------
+101 - More than three parameters used when calling the program.
+102 - Three parameters were given but the second was not -p or --port.
+103 - An invalid port number was given. It must be in the range of usable ports (0 - 65,535).
+104 - Two parameters were given but the second did not match a version, about, or help code.
+105 - A non-integer was supplied as the port number. Port number must be an integer.
+106 - Three parameters were given but the third was not -e.
+107 - Environment variable name supplied by the client did not return anything.
+108 - Environment variable returned a non-numeric value. 
+109 - Numeric value containted in enviornment variable is outside range of usable ports (0 - 65,535).

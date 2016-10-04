@@ -1,0 +1,19 @@
+Uso: setport {parameter} {port number} O setport {parameter} {parameter} {environment variable}
+
+-h, --help      Muestra la información de uso.
+-p, --port      Permite al usuario configurar un puerto. Introduzca el número de puerto a utilizar.
+-v, --version	Muestra el número de versión del programa.
+-!, --about	Muestra información sobre el creador del programa.
+-e		Permite al usuario definir un número de puerto por buscar una variable de entorno.
+		Si no se utiliza un nombre de variable de entorno, variables puerto se utiliza por defecto.
+		
+-------------------Error Codes-------------------
+101 - Más de tres parámetros utilizados cuando se invoca el programa.
+102 - Se dieron tres parámetros, pero el segundo no se -p o --port.
+103 - Se le dio un número de puerto válido. Debe estar en el intervalo de puertos utilizables (0 - 65535).
+104 - Se dieron dos parámetros, pero el segundo no ha producido una versión, sobre, o código de ayuda.
+105 - A no entero se suministra como el número de puerto. número de puerto debe ser un entero.
+106 - Se dieron tres parámetros, pero el tercero no fue -e.
+107 - Medio Ambiente nombre de la variable suministrada por el cliente no devuelve nada.
+108 - Variable de entorno devuelve un valor no numérico.
+109 - Valor numérico dentro de la variable enviornment está fuera del rango de puertos utilizables (0 - 65,535).

@@ -1,0 +1,12 @@
+
+(Error 101) Demasiados parámetros!
+(Error 102) Parámetro de puerto no válido!
+(Error 103) El número de puerto no válido!
+(Error 104) Segundo parámetro no es válido!
+(Error 105) El número de puerto que no sea entero!
+(Error 106) Parámetro variable de entorno no válido!
+(Error 107) De entorno no válido nombre de la variable!
+(Error 108) No entero valor de la variable medio ambiente!
+(Error 109) De entorno no válido número variable!
+Escucha en el puerto: 
+Versión 1.2
