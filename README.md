@@ -1,7 +1,6 @@
-# CS3370
-Coursework for CS3370 Advanced C++ Development
+# portsetter
 
-                    **Set portsetter Alias**
+                    __Set portsetter Alias__
                         
 To enable the portsetter program to be called with the command "setport" follow these steps:
 
@@ -14,7 +13,7 @@ To enable the portsetter program to be called with the command "setport" follow 
 
 
 
-                    **How Testing Program Works**
+                    __How Testing Program Works__
                     
 The testing progarm is run simply by running its executable i.e. ./Tester.cpp.o. 
 It will then run a series of tests automatically and will return whether or not the test
@@ -31,7 +30,7 @@ program. The program calls the portsetter executable directly, not by its alias.
 
 
 
-                    **Conjunto portsetter Alias**
+                    __Conjunto portsetter Alias__
                     
 Para activar el programa portsetter ser llamado con el comando "SETPORT" siga estos pasos:
 
@@ -43,7 +42,7 @@ Para activar el programa portsetter ser llamado con el comando "SETPORT" siga es
 
 
 
-                **Cómo Programa de Verificación de Obras**
+                __Cómo Programa de Verificación de Obras__
 
 El progarm prueba se ejecuta simplemente mediante la ejecución de su ejecutable es decir ./Tester.cpp.o.
 A continuación, ejecutar una serie de pruebas automáticamente y volverá si la prueba o no
