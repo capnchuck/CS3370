@@ -1,6 +1,6 @@
 # portsetter
 
-__portsetter__
+__*English*__
 
 The portsetter program allows the user to specify a port that they would like to listen on.
 To run the portsetter program, navigate to the portsetter directory and call the program with
@@ -35,7 +35,7 @@ program. The program calls the portsetter executable directly, not by its alias.
 
 
 
-__portsetter__
+__*Espanol*__
 
 El programa portsetter permite al usuario especificar un puerto que les gustaría escuchar.
 Para ejecutar el programa portsetter, vaya al directorio portsetter y llamar al programa con
