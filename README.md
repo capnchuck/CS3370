@@ -1,5 +1,13 @@
 # portsetter
 
+__portsetter__
+The portsetter program allows the user to specify a port that they would like to listen on.
+To run the portsetter program, navigate to the portsetter directory and call the program with
+./portsetter.cpp.o (if you have set the setport alias (see next section) you can call the 
+program with setport). To view usage information, either just call the program or pass
+-h or --help as parameters.
+
+
 __Set portsetter Alias__
                         
 To enable the portsetter program to be called with the command "setport" follow these steps:
@@ -9,8 +17,6 @@ To enable the portsetter program to be called with the command "setport" follow 
 3. Add the line: alias setport='{complete path to portsetter.cpp.o file}'
 4. Save and exit the file.
 5. Enter the command "source ~/.bashrc" to enable the changes.
-
-
 
 
 __How Testing Program Works__
@@ -28,6 +34,12 @@ program. The program calls the portsetter executable directly, not by its alias.
 
 
 
+__portsetter__
+El programa portsetter permite al usuario especificar un puerto que les gustaría escuchar.
+Para ejecutar el programa portsetter, vaya al directorio portsetter y llamar al programa con
+./portsetter.cpp.o (si ha configurado el alias SETPORT (véase la siguiente sección) puede llamar al
+programa con setport). Para ver información de uso, ya sea simplemente llamar al programa o pasar
+-h o --help como parámetros.
 
 
 __Conjunto portsetter Alias__
