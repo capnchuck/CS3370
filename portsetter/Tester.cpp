@@ -73,13 +73,13 @@ int main(int argc, char* argv[])
     //Test 11
     system("echo '\n'Test_11 >>test.txt");
     statusCode = system("./portsetter.cpp.o -p --port 9 >>test.txt") / 256;
-    if (statusCode != 101) { cout << "Test 11 {setport -p --port 9}     Failed\n";} 
+    if (statusCode != 106) { cout << "Test 11 {setport -p --port 9}     Failed\n";} 
         else { cout << "Test 11 {setport -p --port 9}    Passed\n";}
         
     //Test 12
     system("echo '\n'Test_12 >>test.txt");
     statusCode = system("./portsetter.cpp.o -p 77 33 >>test.txt") / 256;
-    if (statusCode != 101) { cout << "Test 12 {setport -p 77 33}        Failed\n";} 
+    if (statusCode != 106) { cout << "Test 12 {setport -p 77 33}        Failed\n";} 
         else { cout << "Test 12 {setport -p 77 33}       Passed\n";}
         
     //Test 13
@@ -117,6 +117,48 @@ int main(int argc, char* argv[])
     statusCode = system("./portsetter.cpp.o -P 714 >>test.txt") / 256;
     if (statusCode != 102) { cout << "Test 18 {setport -P 714}          Failed\n";} 
         else { cout << "Test 18 {setport -P 714}         Passed\n";}
+        
+    //Test 19
+    system("echo '\n'Test_19 >>test.txt");
+    statusCode = system("./portsetter.cpp.o -? >>test.txt") / 256;
+    if (statusCode != 0) { cout << "Test 19 {setport -?}                Failed\n";} 
+        else { cout << "Test 19 {setport -?}             Passed\n";}
+        
+    //Test 20
+    system("echo '\n'Test_20 >>test.txt");
+    statusCode = system("./portsetter.cpp.o -! >>test.txt") / 256;
+    if (statusCode != 0) { cout << "Test 20 {setport -!}                Failed\n";} 
+        else { cout << "Test 20 {setport -!}             Passed\n";}
+        
+    //Test 21
+    system("echo '\n'Test_21 >>test.txt");
+    statusCode = system("./portsetter.cpp.o --about >>test.txt") / 256;
+    if (statusCode != 0) { cout << "Test 21 {setport --about}          Failed\n";} 
+        else { cout << "Test 21 {setport --about}        Passed\n";}
+        
+    //Test 22
+    system("echo '\n'Test_22 >>test.txt");
+    statusCode = system("./portsetter.cpp.o -v >>test.txt") / 256;
+    if (statusCode != 0) { cout << "Test 22 {setport -v}              Failed\n";} 
+        else { cout << "Test 22 {setport -v}             Passed\n";}
+        
+    //Test 23
+    system("echo '\n'Test_23 >>test.txt");
+    statusCode = system("./portsetter.cpp.o --version >>test.txt") / 256;
+    if (statusCode != 0) { cout << "Test 23 {setport --version}       Failed\n";} 
+        else { cout << "Test 23 {setport --version}      Passed\n";}
+        
+    //Test 24
+    system("echo '\n'Test_24 >>test.txt");
+    statusCode = system("./portsetter.cpp.o -p -e PORT >>test.txt") / 256;
+    if (statusCode != 0) { cout << "Test 24 {setport -p -e PORT}      Failed\n";} 
+        else { cout << "Test 24 {setport -p -e PORT}     Passed\n";}
+        
+    //Test 25
+    system("echo '\n'Test_25 >>test.txt");
+    statusCode = system("./portsetter.cpp.o -p -e FAKE_PORT >>test.txt") / 256;
+    if (statusCode != 107) { cout << "Test 25 {setport -p -e FAKE_PORT}  Failed\n";} 
+        else { cout << "Test 25 {setport -p -e FAKE_PORT} Passed\n";}
         
     return 0;
 }   
