@@ -1,6 +1,7 @@
 # portsetter
 
 __portsetter__
+
 The portsetter program allows the user to specify a port that they would like to listen on.
 To run the portsetter program, navigate to the portsetter directory and call the program with
 ./portsetter.cpp.o (if you have set the setport alias (see next section) you can call the 
@@ -35,6 +36,7 @@ program. The program calls the portsetter executable directly, not by its alias.
 
 
 __portsetter__
+
 El programa portsetter permite al usuario especificar un puerto que les gustaría escuchar.
 Para ejecutar el programa portsetter, vaya al directorio portsetter y llamar al programa con
 ./portsetter.cpp.o (si ha configurado el alias SETPORT (véase la siguiente sección) puede llamar al
