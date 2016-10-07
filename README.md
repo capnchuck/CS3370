@@ -29,6 +29,9 @@ that test passed as long as the correct non-zero number is returned. A log of al
 returned by the program will be kept in test.txt. If a test does not pass, look for what 
 the program returns in test.txt and report any errors you find.
 
+To test the program for spanish output, change your locale to any es\_ and look in the
+test.txt file for all spanish output for each test.
+
 It is important to keep the Tester executable in the same directory as the portsetter
 program. The program calls the portsetter executable directly, not by its alias.
 
@@ -64,6 +67,9 @@ aprueba o no, en la ventana de la consola. Si una prueba de cheques contra entra
 que prueba pasó el tiempo que se devuelve el número correcto distinto de cero. Un registro de todos los datos
 devuelto por el programa se mantendrá en test.txt. Si una prueba no pasa, buscar lo
 el programa vuelve en test.txt e informe de cualquier error que encuentre.
+
+Para probar el programa para la salida española, cambie el entorno local a cualquier es\_ y buscar en el
+archivo test.txt para todas las salidas español para cada prueba.
 
 Es importante mantener el ejecutable Tester en el mismo directorio que el portsetter
 programa. El programa llama al ejecutable portsetter directamente, no por su alias.
