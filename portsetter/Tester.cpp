@@ -156,9 +156,21 @@ int main(int argc, char* argv[])
         
     //Test 25
     system("echo '\n'Test_25 >>test.txt");
-    statusCode = system("./portsetter.cpp.o -p -e FAKE_PORT >>test.txt") / 256;
-    if (statusCode != 107) { cout << "Test 25 {setport -p -e FAKE_PORT}  Failed\n";} 
-        else { cout << "Test 25 {setport -p -e FAKE_PORT} Passed\n";}
+    statusCode = system("./portsetter.cpp.o -p -e FAKE_PRT >>test.txt") / 256;
+    if (statusCode != 107) { cout << "Test 25 {setport -p -e FAKE_PRT}  Failed\n";} 
+        else { cout << "Test 25 {setport -p -e FAKE_PRT} Passed\n";}
         
+    //Test 26
+    system("echo '\n'Test_26 >>test.txt");
+    statusCode = system("./portsetter.cpp.o -p -e C9_USER >>test.txt") / 256;
+    if (statusCode != 108) { cout << "Test 26 {setport -p -e C9_USER}  Failed\n";} 
+        else { cout << "Test 26 {setport -p -e C9_USER}  Passed\n";}
+        
+    //Test 27
+    system("echo '\n'Test_27 >>test.txt");
+    statusCode = system("./portsetter.cpp.o -p num >>test.txt") / 256;
+    if (statusCode != 105) { cout << "Test 27 {setport -p num}        Failed\n";} 
+        else { cout << "Test 27 {setport -p num}         Passed\n";}
+    
     return 0;
 }   
