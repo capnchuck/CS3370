@@ -8,6 +8,8 @@
 
 using namespace std;
 
+void testCheck(string sysStr, int testNum, int statusCode);
+
 int main(int argc, char* argv[])
 {
     //Test 1
@@ -172,5 +174,74 @@ int main(int argc, char* argv[])
     if (statusCode != 105) { cout << "Test 27 {setport -p num}        Failed\n";} 
         else { cout << "Test 27 {setport -p num}         Passed\n";}
     
+    // NEW TESTS
+    // Test 28
+    system("echo '\n'Test_28 >>test.txt");
+    statusCode = system("./portsetter.cpp.o -p --environment >>test.txt") / 256;
+    if (statusCode != 0) { cout << "Test 28 {setport -p --environment}        Failed\n";} 
+        else { cout << "Test 28 {setport -p --environment}         Passed\n";}
+
+    // Test 29
+    system("echo '\n'Test_29 >>test.txt");
+    statusCode = system("./portsetter.cpp.o -p --environment BAR >>test.txt") / 256;
+    if (statusCode != 0) { cout << "Test 29 {setport -p --environment BAR}        Failed\n";} 
+        else { cout << "Test 29 {setport -p --environment BAR}         Passed\n";}
+        
+    // Test 30
+    system("echo '\n'Test_30 >>test.txt");
+    statusCode = system("./portsetter.cpp.o --port -e BAR >>test.txt") / 256;
+    if (statusCode != 0) { cout << "Test 30 {setport --port -e BAR}        Failed\n";} 
+        else { cout << "Test 30 {setport --port -e BAR}         Passed\n";}
+        
+    // Test 31
+    system("echo '\n'Test_31 >>test.txt");
+    statusCode = system("./portsetter.cpp.o --port --environment PORT >>test.txt") / 256;
+    if (statusCode != 0) { cout << "Test 31 {setport --port --environment PORT}        Failed\n";} 
+        else { cout << "Test 31 {setport --port --environment PORT}         Passed\n";}
+   
+       // Test 31
+    int testNum = 32;
+    string testMe = "./portsetter.cpp.o --port --environment PORT";
+    string testMe2 = testMe + ">>test.txt";
+    string outputStr = "echo '\n'" + to_string(testNum) + " >>test.txt";
+    system(outputStr.c_str());
+    statusCode = system(testMe2.c_str()) / 256;
+    if (statusCode != 0) { cout << "Test " + to_string(testNum) + " {" + testMe + "}\t\t Failed\n";}//--port --environment PORT}        Failed\n";} 
+        else { cout << "Test " + to_string(testNum) + " {" + testMe + "}\t\t Passed\n";}
+   ++testNum;
+
+    testMe = "./portsetter.cpp.o --port -e BAR";
+    testMe2 = testMe + ">>test.txt";
+    outputStr = "echo '\n'" + to_string(testNum) + " >>test.txt";
+    system(outputStr.c_str());
+    statusCode = system(testMe2.c_str()) / 256;
+    if (statusCode != 0) { cout << "Test " + to_string(testNum) + " {" + testMe + "}\t\t Failed\n";}//--port --environment PORT}        Failed\n";} 
+        else { cout << "Test " + to_string(testNum) + " {" + testMe + "}\t\t Passed\n";}
+   ++testNum;
+   
+   testMe =  "./portsetter.cpp.o --port -e BAR";
+   testCheck(testMe, testNum, 0); ++testNum;
+   testMe =  "./portsetter.cpp.o -p --environment FAKE_PRT";
+   testCheck(testMe, testNum, 0); ++testNum;
+   testMe =  "./portsetter.cpp.o --environment BARRY";
+   testCheck(testMe, testNum, 0); ++testNum;
+   testMe =  "./portsetter.cpp.o --port -e BAR asdf";
+   testCheck(testMe, testNum, 0); ++testNum;
+   testMe =  "./portsetter.cpp.o --environment";
+   testCheck(testMe, testNum, 0); ++testNum;
+   testMe =  "./portsetter.cpp.o --port -e PORT";
+   testCheck(testMe, testNum, 0); ++testNum;
+   
     return 0;
+    
 }   
+
+
+void testCheck(string sysStr, int testNum, int statusCode){
+    string testMe = sysStr + ">>test.txt";
+    string outputStr = "echo '\n'" + to_string(testNum) + " >>test.txt";
+    system(outputStr.c_str());
+   int statusCode2 = system(testMe.c_str()) / 256;
+    if (statusCode2 != statusCode) { cout << "Test " + to_string(testNum) + " {" + sysStr + "}\t\t Failed\n";}//--port --environment PORT}        Failed\n";} 
+        else { cout << "Test " + to_string(testNum) + " {" + sysStr + "}\t\t Passed\n";}
+}
