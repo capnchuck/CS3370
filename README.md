@@ -8,6 +8,8 @@ To run the portsetter program, navigate to the portsetter directory and call the
 program with setport). To view usage information, either just call the program or pass
 -h or --help as parameters.
 
+Now takes "--environment" as being equal to "-e"
+
 
 __Set portsetter Alias__
                         
@@ -73,3 +75,8 @@ archivo test.txt para todas las salidas español para cada prueba.
 
 Es importante mantener el ejecutable Tester en el mismo directorio que el portsetter
 programa. El programa llama al ejecutable portsetter directamente, no por su alias.
+
+
+__Updates__
+Now takes "--environment" as being equal to "-e" in the command line arguments.
+Also changes environment variable "PORT" to 3114 and "BAR" to 3116.
